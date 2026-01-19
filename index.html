@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./css/index.css" />
-    <!-- Font awesome cdn link -->
+    <!-- Font awesome cdn link start -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -13,7 +13,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Font awesome cdn link end -->
 
+    <!-- some color variable and custom classes for reducing code -->
     <style type="text/tailwindcss">
       @theme {
         --color-primary: #00ff88;
@@ -32,6 +34,8 @@
         @apply bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8];
       }
     </style>
+        <!-- some color variable and custom classes for reducing code ends here -->
+
 
     <title>Assignment-2</title>
   </head>
@@ -39,18 +43,31 @@
     <!-- Header part start -->
     <header class="bg-bg-dark fixed w-full z-50 border-b border-gray-300/10">
       <nav class="wrapper flex justify-between items-center">
+        <!-- left logo -->
         <h4
           class="font-bold text-3xl text-white active:scale-95 hover:scale-105 duration-300 transition-all"
         >
           Tech<span class="text-gradient">Wave</span>
         </h4>
-
+<!-- responsive mane items -->
         <ul class="text-white md:flex gap-6 hidden">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Episodes</a></li>
-          <li><a href="#">Host</a></li>
+          <li
+            class="relative before:content-[''] before:absolute before:left-0 before:-bottom-1 before:h-0.5 before:w-0 before:bg-primary before:transition-all before:duration-400 hover:before:w-full"
+          >
+            <a href="#">About</a>
+          </li>
+          <li
+            class="relative before:content-[''] before:absolute before:left-0 before:-bottom-1 before:h-0.5 before:w-0 before:bg-primary before:transition-all before:duration-400 hover:before:w-full"
+          >
+            <a href="#">Episodes</a>
+          </li>
+          <li
+            class="relative before:content-[''] before:absolute before:left-0 before:-bottom-1 before:h-0.5 before:w-0 before:bg-primary before:transition-all before:duration-400 hover:before:w-full"
+          >
+            <a href="#">Host</a>
+          </li>
         </ul>
-
+<!--nav right button -->
         <button
           class="px-4 hidden md:block py-1.5 rounded-2xl bg-gradient text-white font-semibold active:scale-95 hover:scale-105 duration-300 transition-all"
         >
@@ -67,15 +84,13 @@
     <!-- Hero part start -->
 
     <main class="pt-3">
-      <section
-        class="md:h-screen  flex flex-col items-center pt-14 relative"
-      >
+      <section class="md:h-screen flex flex-col items-center pt-14 relative">
         <img
           src="./assets/hero-bg.png"
           alt=""
           class="absolute -z-50 w-screen h-120 md:h-screen md:w-full"
         />
-
+<!-- This is the man circle  -->
         <picture
           class="bottom-20 flex items-center justify-center absolute top-10 md:top-10 w-50 md:w-80"
         >
@@ -96,8 +111,14 @@
             >NEW</span
           >
         </picture>
+
+        <!-- Main circle ends here -->
+
+        <!-- hero text section -->
         <section class="text-center mt-60 md:mt-100">
-          <h1 class="text-4xl font-bold md:text-6xl mt-10 text-white">TechWave</h1>
+          <h1 class="text-4xl font-bold md:text-6xl mt-10 text-white">
+            TechWave
+          </h1>
 
           <p class="py-3 text-gray-400 text-xs md:text-base">
             Your daily dose of tech insights, productivity hacks, and personal
@@ -119,6 +140,7 @@
             </button>
           </div>
         </section>
+        <!-- hero text section end here -->
       </section>
     </main>
 
@@ -130,16 +152,20 @@
       <section
         class="wrapper text-gray-300 text-center border-b border-gray-100/10"
       >
-        <h2 class="text-white text-4xl  md:text-6xl">About The Podcast</h2>
+        <h2 class="text-white text-4xl md:text-6xl">About The Podcast</h2>
         <div class="md:px-60">
-          <p class="text-center text-xs text-gray-400 py-4 md:text-sm leading-5 md:leading-8">
+          <p
+            class="text-center text-xs text-gray-400 py-4 md:text-sm leading-5 md:leading-8"
+          >
             echWave is your go-to podcast for staying ahead in the fast-paced
             world of technology. We break down complex topics into digestible
             insights, explore productivity strategies that actually work, and
             share stories of personal growth from industry leaders
           </p>
 
-          <p class="text-gray-400 md:mt-7 mt-2 text-xs  text-center md:text-sm pb-10">
+          <p
+            class="text-gray-400 md:mt-7 mt-2 text-xs text-center md:text-sm pb-10"
+          >
             Join thousands of young professionals and tech enthusiasts who start
             their day with TechWave.
           </p>
@@ -151,19 +177,32 @@
       >
         <div class="text-center">
           <p class="md:text-5xl text-3xl font-bold text-primary">150K+</p>
-          <p class="uppercase py-4 text-gray-400 text-xs md:text-base">Monthly Listeners</p>
+          <p class="uppercase py-4 text-gray-400 text-xs md:text-base">
+            Monthly Listeners
+          </p>
         </div>
         <div class="text-center">
-          <p class="md:text-5xl text-3xl  font-bold text-primary">200+</p>
-          <p class="uppercase py-4 text-gray-400 text-xs md:text-base"> Episodes Published</p>
+          <p class="md:text-5xl text-3xl font-bold text-primary">200+</p>
+          <p class="uppercase py-4 text-gray-400 text-xs md:text-base">
+            Episodes Published
+          </p>
         </div>
         <div class="text-center">
-          <p class="md:text-5xl text-3xl  font-bold text-primary gap-2   flex items-center justify-center">4.9 <i class="fa-solid fa-star text-primary text-sm md:text-base"></i></p>
-          <p class="uppercase py-4 text-gray-400 text-xs md:text-base">Average Rating</p>
+          <p
+            class="md:text-5xl text-3xl font-bold text-primary gap-2 flex items-center justify-center"
+          >
+            4.9
+            <i class="fa-solid fa-star text-primary text-sm md:text-base"></i>
+          </p>
+          <p class="uppercase py-4 text-gray-400 text-xs md:text-base">
+            Average Rating
+          </p>
         </div>
         <div class="text-center">
-          <p class="md:text-5xl text-3xl  font-bold text-primary">50+</p>
-          <p class="uppercase py-4 text-gray-400 text-xs md:text-base">Industry Experts</p>
+          <p class="md:text-5xl text-3xl font-bold text-primary">50+</p>
+          <p class="uppercase py-4 text-gray-400 text-xs md:text-base">
+            Industry Experts
+          </p>
         </div>
       </section>
     </article>
@@ -174,13 +213,15 @@
 
     <article class="bg-bg-light">
       <section class="wrapper text-center">
-        <h2 class="md:text-5xl text-3xl text-white py-8 md:pt-15 ">Why Choose TechWave</h2>
+        <h2 class="md:text-5xl text-3xl text-white py-8 md:pt-15">
+          Why Choose TechWave
+        </h2>
 
         <section
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-5 gap-3 text-left items-center pb-15 md:px-5 px-2"
         >
           <div
-            class="bg-[#351165] rounded-xl md:px-4  md:py-28 p-8 md:w-full w-77 mx-auto text-left text-white row-span-2 hover:scale-102 duration-300 "
+            class="bg-[#351165] rounded-xl md:px-4 md:py-28 p-8 md:w-full w-77 mx-auto text-left text-white row-span-2 hover:scale-102 duration-300"
           >
             <img src="./assets/headphone.png" alt="" />
             <h4 class="text-2xl py-3">Premium Audio Quality</h4>
@@ -222,7 +263,7 @@
             </p>
           </div>
           <div
-            class="bg-[#351165] rounded-xl p-8  hover:scale-102 duration-300 text-white md:w-full  w-78 h-full  mx-auto"
+            class="bg-[#351165] rounded-xl p-8 hover:scale-102 duration-300 text-white md:w-full w-78 h-full mx-auto"
           >
             <img src="./assets/resource.png" alt="" />
             <h4 class="text-2xl py-3">Rich Resources</h4>
@@ -251,7 +292,9 @@
           <div
             class="card rounded-2xl overflow-hidden bg-[#250D44] hover:scale-103 duration-300 w-70 mx-auto md:w-full"
           >
-            <div class="overflow-hidden rounded-tr-2xl rounded-tl-2xl w-70 h-40 md:w-full md:h-full mx-auto">
+            <div
+              class="overflow-hidden rounded-tr-2xl rounded-tl-2xl w-70 h-40 md:w-full md:h-full mx-auto"
+            >
               <iframe
                 width="560"
                 height="315"
@@ -272,10 +315,12 @@
               ></iframe>
             </div>
             <div class="md:p-5 p-3">
-              <h3 class="md:text-3xl text-md py-2 text-white font-semibold  text-left">
+              <h3
+                class="md:text-3xl text-md py-2 text-white font-semibold text-left"
+              >
                 The Future of AI in Everyday Life
               </h3>
-              <p class="text-gray-400 md:py-4 text-sm py-2 ">
+              <p class="text-gray-400 md:py-4 text-sm py-2">
                 Exploring how artificial intelligence is transforming our daily
                 routines and what to expect in the next decade.
               </p>
@@ -289,34 +334,79 @@
           <div
             class="card rounded-2xl overflow-hidden bg-[#250D44] hover:scale-103 duration-300 w-70 mx-auto md:w-full"
           >
-            <div class="overflow-hidden rounded-tr-2xl rounded-tl-2xl w-70 h-40 md:w-full md:h-full mx-auto">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/zdTwqpcRzyY?si=JNsTfu3kv1UfiMO6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div
+              class="overflow-hidden rounded-tr-2xl rounded-tl-2xl w-70 h-40 md:w-full md:h-full mx-auto"
+            >
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/zdTwqpcRzyY?si=JNsTfu3kv1UfiMO6"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="md:p-5 p-3">
-              <h3 class="md:text-3xl text-md py-2 text-white font-semibold  text-left">
-Building Better Habits for Remote Work              </h3>
-              <p class="text-gray-400 md:py-4 text-sm py-2 ">
-                EPractical strategies for staying productive and maintaining work-life balance in a remote environment.
+              <h3
+                class="md:text-3xl text-md py-2 text-white font-semibold text-left"
+              >
+                Building Better Habits for Remote Work
+              </h3>
+              <p class="text-gray-400 md:py-4 text-sm py-2">
+                EPractical strategies for staying productive and maintaining
+                work-life balance in a remote environment.
               </p>
 
               <div class="flex gap-1 items-center">
                 <span><img src="./assets/clock.png" alt="" /></span>
-                <span class="text-primary">35  min</span>
+                <span class="text-primary">35 min</span>
               </div>
             </div>
           </div>
           <div
             class="card rounded-2xl overflow-hidden bg-[#250D44] hover:scale-103 duration-300 w-70 mx-auto md:w-full"
           >
-            <div class="overflow-hidden rounded-tr-2xl rounded-tl-2xl w-70 h-40 md:w-full md:h-full mx-auto">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/dvZFKjCPwNo?si=SmLXclKbPTOcwoMm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div
+              class="overflow-hidden rounded-tr-2xl rounded-tl-2xl w-70 h-40 md:w-full md:h-full mx-auto"
+            >
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/dvZFKjCPwNo?si=SmLXclKbPTOcwoMm"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="md:p-5 p-3">
-              <h3 class="md:text-3xl text-md py-2 text-white font-semibold  text-left">
-               Career Growth in Tech: A Roadmap
+              <h3
+                class="md:text-3xl text-md py-2 text-white font-semibold text-left"
+              >
+                Career Growth in Tech: A Roadmap
               </h3>
-              <p class="text-gray-400 md:py-4 text-sm py-2 ">
-                Expert advice on navigating your tech career from junior developer to senior leadership roles.
+              <p class="text-gray-400 md:py-4 text-sm py-2">
+                Expert advice on navigating your tech career from junior
+                developer to senior leadership roles.
               </p>
 
               <div class="flex gap-1 items-center">
@@ -325,7 +415,6 @@ Building Better Habits for Remote Work              </h3>
               </div>
             </div>
           </div>
-   
         </section>
       </section>
     </article>
@@ -336,7 +425,9 @@ Building Better Habits for Remote Work              </h3>
 
     <article class="bg-bg-dark">
       <section class="bg-bg-dark py-10 wrapper">
-        <h3 class="md:text-5xl text-3xl text-center py-4 text-white">Meet The Host</h3>
+        <h3 class="md:text-5xl text-3xl text-center py-4 text-white">
+          Meet The Host
+        </h3>
 
         <section
           class="flex flex-col md:flex-row gap-3 justify-between items-center p-4 bg-[#250D44] rounded-2xl my-4 mb-25 hover:scale-103 duration-300"
@@ -348,7 +439,9 @@ Building Better Habits for Remote Work              </h3>
             >
               Alex Kumar
             </h4>
-            <p class="py-3 md:text-left text-gray-400 text-center text-sm md:text-base">
+            <p
+              class="py-3 md:text-left text-gray-400 text-center text-sm md:text-base"
+            >
               Tech entrepreneur, productivity expert, and lifelong learner. Alex
               has been in the tech industry for over 10 years, working with
               startups and Fortune 500 companies. Through TechWave, Alex shares
@@ -383,7 +476,9 @@ Building Better Habits for Remote Work              </h3>
           Tech<span class="text-gradient">Wave</span>
         </h4>
 
-        <div class="flex gap-5 justify-center items-center md:py-4 py-6 flex-wrap">
+        <div
+          class="flex gap-5 justify-center items-center md:py-4 py-6 flex-wrap"
+        >
           <span class="flex items-center gap-2 text-white">
             <img src="./assets/spotify.png" alt="" />
             <p>Spotify</p>
@@ -413,3 +508,6 @@ Building Better Habits for Remote Work              </h3>
     <!-- footer end  -->
   </body>
 </html>
+
+<!-- FULL RESPONSIVE DESIGN -->
+<!-- The code is locking messy for so many tailwind classes and also full responsiveness done with the tailwind classes.  -->
